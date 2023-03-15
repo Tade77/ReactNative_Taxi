@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import {
-  Button,
   Image,
   Modal,
   StyleSheet,
@@ -12,6 +11,7 @@ import {
 
 const Authentication = () => {
   const [viewModal, setViewModal] = useState(false);
+
   return (
     <View style={styles.authWrapper}>
       <Text style={styles.addPinText}>
@@ -84,7 +84,7 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   input: {
-    borderWidth: 2,
+    borderWidth: 1,
     width: 50,
     height: 50,
     margin: 10,
@@ -109,7 +109,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#999",
+    backgroundColor: "rgba(0,0,0, 0.6)",
   },
   modal: {
     height: 450,
@@ -120,9 +120,10 @@ const styles = StyleSheet.create({
     borderRadius: 20,
   },
   modalIcon: {
-    height: 150,
-    width: 150,
-    marginLeft: 70,
+    height: 180,
+    width: 180,
+    marginLeft: 60,
+    marginTop: 30,
   },
   header: {
     fontSize: 28,
@@ -130,7 +131,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontWeight: "700",
     marginTop: 40,
-    marginBottom: 30,
+    marginBottom: 20,
   },
   modalTxt: {
     textAlign: "center",

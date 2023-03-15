@@ -13,7 +13,7 @@ const Login = () => {
   return (
     <View style={styles.loginWrapper}>
       <Text style={styles.login}>Login to your</Text>
-      <Text style={styles.login}>Account</Text>
+      <Text style={styles.loginA}>Account</Text>
       <TextInput style={styles.inputs} placeholder="email" />
       <TextInput
         maxLength={6}
@@ -42,6 +42,14 @@ const styles = StyleSheet.create({
   },
   login: {
     fontSize: 36,
+    marginLeft: -10,
+    // lineHeight: 30,
+    marginBottom: 20,
+  },
+  loginA: {
+    fontSize: 36,
+    marginLeft: -80,
+    // lineHeight: 30,
     marginBottom: 20,
   },
   inputs: {

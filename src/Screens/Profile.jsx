@@ -17,7 +17,10 @@ const Profile = () => {
   return (
     <ScrollView>
       <View style={styles.profileContainer}>
-        <Image style={styles.icon} source={require("../../assets/pro2.jpeg")} />
+        <Image
+          style={styles.icon}
+          source={require("../../assets/download.png")}
+        />
         <TextInput style={styles.inputs} placeholder="Fullname" />
         <TextInput style={styles.inputs} placeholder="Nickname" />
         <TextInput style={styles.inputs} placeholder="Date of birth" />
@@ -46,10 +49,11 @@ const styles = StyleSheet.create({
     padding: 50,
   },
   icon: {
-    // resizeMode: "center",
+    resizeMode: "center",
     borderRadius: 200,
     marginBottom: 30,
   },
+
   inputs: {
     fontSize: 16,
     padding: 10,
